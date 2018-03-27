@@ -1,0 +1,110 @@
+body {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../bodyImages/originalX.gif) no-repeat center fixed;
+    background-size: 80%;
+}
+
+.mainCtx {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    overflow: auto;
+}
+
+.mainCtx h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 56px;
+    color: #f2f2f2;
+    text-shadow: 0 0 5px black;
+}
+
+@media (max-width: 600px){
+    .mainCtx h1 {
+        font-size: 30px;
+    }
+
+    body {
+        background-size: 150%;
+    }
+}
+
+.ctxButtons {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 900px;
+    min-width: 200px;
+    width: 100%;
+}
+
+.ctxButtons div {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.ctxButtons div button{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 110px;
+    height: 110px;
+    border: 4px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+.ctxButtons div button .btnInside{
+    height: 70px;
+}
+
+.ctxButtons div button .btnInside kbd{
+    margin-top: 5px;
+    padding: 0 30px;
+}
+
+.ctxButtons div button span{
+    color: #ffc600;
+    font-size: 15px;
+}
+
+@media (max-width: 500px){
+    .ctxButtons div {
+        width: 120px;
+        height: 120px;
+    }
+
+    .ctxButtons div button {
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+    }
+
+    .ctxButtons div button .btnInside{
+        height: 40px;
+    }
+    
+    .ctxButtons div button .btnInside kbd{
+        margin-top: 0px;
+        padding: 0 20px;
+    }
+
+    .ctxButtons div button span{
+        font-size: 9px;
+    }
+}
+
